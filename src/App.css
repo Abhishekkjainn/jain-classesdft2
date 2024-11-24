@@ -4,6 +4,7 @@ body{
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.1;
+  cursor: default;
 }
 
 .header{
@@ -54,7 +55,7 @@ body{
   font-weight: 700;
 }
 .menu{
-  width: 50%;
+  width: 75%;
   height: 100vh;
   background-color: royalblue;
   position: fixed;
@@ -65,7 +66,7 @@ body{
   display: none;
 }
 .linkbutton{
-  width: 60px;
+  width: 80px;
   height: 100%;
   display: flex;
   justify-content: start;
@@ -78,7 +79,79 @@ body{
   display: none;
 }
 
-
+.page1{
+  width: 100%;
+  height:100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.topname{
+  font-size: 38px;
+  font-weight: 600;
+  color: royalblue;
+  margin-bottom: 25px;
+}
+.slogan{
+  width: 80%;
+  text-align: center;
+  font-size: 72px;
+  color: black;
+  font-weight: 600;
+}
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.primary-button{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: royalblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  margin: 20px;
+}
+.icon{
+  margin-left: 10px;
+  width: 25px;
+  filter: invert(1);
+}
+.secondary-button{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+  margin: 20px;
+}
+.icon-secondary{
+  filter: none;
+  width: 25px;
+  margin-left: 10px;
+}
+.primary-button:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgb(51, 83, 180);
+}
+.secondary-button:hover{
+  cursor: pointer;
+}
 
 @media (min-width: 600px) and (max-width: 1000px) {
   .company{
@@ -95,6 +168,71 @@ body{
   .menu{
     display: flex;
   }
+  .topname{
+    font-size: 22px;
+    font-weight: 600;
+    color: royalblue;
+    margin-bottom: 15px;
+  }
+  .slogan{
+    width: 80%;
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    font-weight: 600;
+  }
+  .cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .primary-button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: royalblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin: 20px;
+  }
+  .icon{
+    margin-left: 10px;
+    width: 25px;
+    filter: invert(1);
+  }
+  .secondary-button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    margin: 20px;
+  }
+  .icon-secondary{
+    filter: none;
+    width: 25px;
+    margin-left: 10px;
+  }
+  .primary-button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgb(51, 83, 180);
+  }
+  .secondary-button:hover{
+    cursor: pointer;
+  }
+  
 }
 
 @media (max-width: 600px) {
@@ -112,4 +250,70 @@ body{
   .menu{
     display: flex;
   }
+  .topname{
+    font-size: 26px;
+    font-weight: 600;
+    color: royalblue;
+    margin-bottom: 15px;
+  }
+  .slogan{
+    width: 75%;
+    text-align: center;
+    font-size: 48px;
+    color: black;
+    font-weight: 600;
+  }
+  .cta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .primary-button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: royalblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin: 5px;
+  }
+  .icon{
+    margin-left: 10px;
+    width: 25px;
+    filter: invert(1);
+  }
+  .secondary-button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    margin: 5px;
+  }
+  .icon-secondary{
+    filter: none;
+    width: 25px;
+    margin-left: 10px;
+  }
+  .primary-button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgb(51, 83, 180);
+  }
+  .secondary-button:hover{
+    cursor: pointer;
+  }
+  
 }
