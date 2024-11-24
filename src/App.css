@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.1;
+}
+
+.header{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.608);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.company{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.complogo{
+  height: 80%;
+}
+.links{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 20px;
+}
+.link{
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.link:hover{
+  transition: 0s linear;
+  border-top:3px solid royalblue;
+  cursor: pointer;
+  font-weight: 700;
+}
+.menu{
+  width: 50%;
+  height: 100vh;
+  background-color: royalblue;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  bottom: 0;
+  z-index: 101;
+  display: none;
+}
+.linkbutton{
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.menubuttonicon{
+  width: 20px;
+}
+.linkbutton{
+  display: none;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .company{
+    width: 50%;
+  }
+  .link{
+    display: none;
+  }
+  .linkbutton{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .menu{
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .company{
+    width: 50%;
+  }
+  .link{
+    display: none;
+  }
+  .linkbutton{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .menu{
+    display: flex;
+  }
+}
