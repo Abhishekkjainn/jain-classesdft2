@@ -153,6 +153,17 @@ body{
   cursor: pointer;
 }
 
+/*page2*/
+.page2{
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+
+
+
+
 @media (min-width: 600px) and (max-width: 1000px) {
   .company{
     width: 50%;
@@ -238,6 +249,9 @@ body{
 @media (max-width: 600px) {
   .company{
     width: 50%;
+  }
+  .complogo{
+    scale: 0.80;
   }
   .link{
     display: none;
